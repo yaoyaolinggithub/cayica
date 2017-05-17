@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+		<title></title>
+		<link href="css/mui.min.css?t=1483682470157" rel="stylesheet" />
+		<link rel="stylesheet" href="css/my.css?t=1483682470157" />
+	</head>
+	<body>
+		<header class="mui-bar  mui-bar-transparent">
+		  <div class="mui-pull-left" id="qrcode">
+			<a class="mui-icon iconfont icon-saoma "></a>
+	    	 <a>扫码</a>
+		 </div>
+		 <h1 class="mui-title" id="title">个人中心 </h1>
+		<div class="mui-pull-right" id="message">
+				<a class="mui-icon iconfont icon-xiaoxi"><span class="mui-badge mui-hidden" id="msgNum"></span></a>
+		        <a>消息</a>
+		</div>
+	</header>
+		<div class="mui-content">
+			<div class="box">
+				<img src="images/mycenter.png" class="background"/>
+				<div class="picbox">
+					  <img src="images/touxiang.png" id="userpic"/>
+	                   <div class="ellipsis" id="username"></div>
+				</div>
+			</div>
+		<ul class="first mui-table-view">
+				<li class="mui-table-view-cell" data="com" data-p="yue">
+					<a class="mui-navigate-right">
+				       <div class="mui-ellipsis"><span class="mui-icon iconfont icon-yue"></span><span class="account" id="yue">¥0.00</span></div>
+				       <span class="mui-badge">我的钱包</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view mui-grid-view mui-grid-9 height62">
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 pad1" data="com" data-p="repay"><a href="#">
+		                    <span class="red" id="repay">¥0.00</span>
+		                    <div class="mui-media-body">还款总额</div></a></li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 pad1" data="com" data-p="yj"><a href="#">
+		                    <span class="red" id="yajin">¥0.00</span>
+		                    <div class="mui-media-body">分期额度</div></a></li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 pad1" data="com" data-p="yh"><a href="#">
+		                    <span class="red" id="quan">0张</span>
+		                    <div class="mui-media-body">优惠券</div></a></li>
+		        </ul> 
+		        <ul class="mui-table-view top6">
+				<li class="mui-table-view-cell" data="com" data-p="alldd">
+					<a class="mui-navigate-right">
+				       <div class="mui-ellipsis"><span class="mui-icon iconfont icon-dingdan"></span>订单管理</div>
+				       <span class="mui-badge">查看全部订单</span>
+					</a>
+				</li>
+			</ul>
+		<ul class="mui-table-view mui-grid-view mui-grid-9 height64">
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 padbt3" data="com" data-p="dfk"><a href="#">
+		                    <span class="mui-icon iconfont icon-daifukuan" id="daifukuan"></span>
+		                    <div class="mui-media-body">待付款</div></a></li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 padbt3" data="com" data-p="dfh"><a href="#">
+		                    <span class="mui-icon iconfont icon-daifahuo" id="daifahuo"></span>
+		                    <div class="mui-media-body">待发货</div></a></li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4" data="com" data-p="dsh"><a href="#">
+		                    <span class="mui-icon iconfont icon-daishouhuo " id="daishouhuo"></span>
+		                    <div class="mui-media-body daifahuo">待收货</div></a></li>
+		        </ul> 
+		         <ul class="mui-table-view top6">
+				<li class="mui-table-view-cell" data="com" data-p="hsdd">
+					<a class="mui-navigate-right">
+				       <div class="mui-ellipsis"><span class="mui-icon iconfont icon-yulan"></span>归还管理</div>
+				       <span class="mui-badge">查看全部归还</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view mui-grid-view mui-grid-9 height65">
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 pad1" data="com" data-p="dhs"><a href="#">
+		                    <span class="mui-icon iconfont icon-dengdai" id="daihuishou"></span>
+		                    <div class="mui-media-body" >待派单</div></a></li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4" data="com" data-p="hsz"><a href="#">
+		                    <span class="mui-icon iconfont icon-huishouzhan01" id="huishouzh"></span>
+		                    <div class="mui-media-body">归还中</div></a></li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4"  data="com" data-p="yhs"><a href="#">
+		                    <span class="mui-icon iconfont icon-fanhui1" id="yihuishou"></span>
+		                    <div class="mui-media-body ">已归还</div></a></li>
+		        </ul>
+		        <ul class="mui-table-view top6">
+				<li class="mui-table-view-cell" data="com" data-p="yddd">
+					<a class="mui-navigate-right">
+				       <div class="mui-ellipsis"><span class="mui-icon iconfont icon-jilu" id="yudinNum"></span>预定管理</div>
+				       <span class="mui-badge">查看全部预定订单</span>
+					</a>
+				</li>
+			</ul>
+		         <ul class="mui-table-view top6">
+				<li class="mui-table-view-cell" data="com" data-p="szh">
+					<a class="mui-navigate-right">
+				       <div class="mui-ellipsis"><span class="mui-icon iconfont icon-shezhi"></span>设置</div>
+				       <span class="mui-badge">收货地址管理</span>
+					</a>
+				</li>
+			</ul>
+			 <ul class="mui-table-view top6">
+				<li class="mui-table-view-cell" id="aboutUs">
+					<a class="mui-navigate-right">
+				       <div class="mui-ellipsis"><span class="mui-icon iconfont icon-guanyuwomen"></span>关于</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	  <script type="text/javascript" src="js/mui.min.js?t=1480070399971" ></script>
+	  <script type="text/javascript" src="js/immersed.index.js" ></script>
+	  <script type="text/javascript" src="js/common.js?t=1481871648936" ></script>
+	  <script type="text/javascript" src="js/cache.img.js?t=1483682470157" ></script>
+	 <script type="text/javascript" src="js/my.js?t=1483682470157" ></script>
+	</body>
+</html>

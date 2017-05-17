@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title></title>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link href="css/forgetPwd.css" rel="stylesheet"/>
+</head>
+<body>
+  <header class="mui-bar mui-bar-nav">
+	 	<a class="mui-action-back mui-icon mui-icon-closeempty"></a>
+	 	<h1 class="mui-title">注册</h1>
+  </header>
+  <div class="mui-content">
+  	<div class="login">
+		<div class="input_list width-icon">
+			<span class="mui-icon iconfont icon-phone-e"></span>
+			<span class="mui-input-row">
+				<input  type="text" class="mui-input-clear width" placeholder="请输入手机号" maxlength="11" id="txtMobile"/>
+			</span>
+			<button type="button" class="mui-btn mui-btn-warning mui-btn-outlined mui-pull-right" id="btnSend">获取验证码</button>
+		</div>
+		<div class="input_list mui-input-row mui-password">
+			<span class="mui-icon iconfont icon-unie637"></span>
+			<input type="text"  placeholder="请输入验证码" class="mui-input-clear" id="txtYzm"/>
+		</div>
+		<div class="input_list mui-input-row">
+			<span class="mui-icon iconfont icon-mima"></span>
+			<input type="password"  placeholder="请输入密码" class="mui-input-password" id="txtPwd" maxlength="30"/>
+		</div>
+		<div class="login_btn">
+			<button type="button" class="mui-btn mui-btn-warning mui-btn-block" id="btnSure" >确定</button>
+		</div>
+		<div class="user_agr">
+				<span class="mui-icon iconfont icon-duihao1 color" id="btnAgree"></span>我同意<span class="xieyi"  id="userAgree">《擦一擦注册服务协议》</span>
+	   </div>
+	</div>
+ </div>
+ <script type="text/javascript" src="js/mui.min.js" ></script>
+ <script type="text/javascript" src="js/immersed.js" ></script>
+ <script type="text/javascript" src="js/common.js?t=1480647763034" ></script>
+ <script type="text/javascript" src="js/md5.min.js" ></script>
+ <script type="text/javascript" src="js/reg.js?t=1481869594516" ></script>
+</body>
+</html>

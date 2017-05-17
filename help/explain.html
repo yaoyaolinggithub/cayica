@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title></title>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <style>
+    	.mui-content,html{background: #FFFFFF;}.content{padding: 20px 15px;}p{color: #000000;text-indent: 2em;}
+    	 .ios-scroll-bounce{width: 100%;position: fixed;top: 0px;bottom: 0px;overflow-y: scroll;-webkit-overflow-scrolling: touch;-ms-touch-action: pan-y cross-slide-y;-ms-scroll-chaining: none;-ms-scroll-limit: 0 50 0 50;}
+    </style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">关于我们</h1>
+	</header>
+	<div class="mui-content" id="scontent">
+		<div class="content">
+			<p>擦一擦（cayica.com）是深圳塔斯克电子商务有限公司旗下专注于线上商品短期租赁的服务平台。</p>
+			<p>擦一擦秉承环保的理念，将循环经济与互联网+思维有机融合，以全新租赁的方式替代固有的商品购买到家的模式，把传统线下的家私家电、生活必需品买卖变成线上短期租赁，以此解决深圳用户生活痛点的创新型企业。</p>
+			<p>擦一擦所租赁的全新产品，主要分为家私、家电两个大类。家私产品均由广东东莞、顺德、江西等知名厂家特供定制；家电产品则均采购于国内一线品牌，质量保证，售后无忧。自擦一擦平台上线以来，服务的企业/公司级用户涵盖了诸如深圳地铁、中国建筑、富士康等大型企业，以及数百家创业公司，便利的办公家私租赁服务完美解决企业/公司级用户配备办公家私花费高昂以及固定资产折损等问题。</p>
+			<p>此外，对于上班族所遭遇到搬家时家私运输成本远高超于其自身价值的问题，擦一擦的“随租随退”新模式都能很好地解决。</p>
+			<p>为使租赁准入门槛更低，企业/公司、个人用户在租赁商品时，将获得擦一擦提供的多档押金方案，使您的手头可支配资金更宽裕。租满3年，所租赁商品所有权将归承租者所有，为您的优质生活增添助力。</p>
+		</div>
+    </div>
+	<script type="text/javascript" src="../js/mui.min.js" ></script>
+	<script type="text/javascript" src="../js/immersed.js" ></script>
+	<script>
+		(function($){
+			if(mui.os.ios){
+				document.getElementById("scontent").classList.add('ios-scroll-bounce');
+			}
+			$.plusReady(function(){
+			   plus.webview.currentWebview().setStyle({scrollIndicator: 'none',decelerationRate:1.0});
+			})
+		})(mui);
+	</script>
+</body>
+</html>

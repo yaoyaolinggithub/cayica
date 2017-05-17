@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+		<title></title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/goodsDetail.css?t=1483928576384" />
+	</head>
+	<body>
+		<nav class="mui-bar mui-bar-tab mui-hidden tips"  id="navtip">
+			所选地区暂不支持配送，非常抱歉！
+		</nav>
+	 <nav class="mui-bar mui-bar-tab mui-hidden"  id="navbox">
+			<a class="mui-tab-item1 top06 mui-pull-left" data="nav" data-v="kefu">
+				<span class="mui-icon iconfont  icon-iconfontshangchuanmoban"></span>
+				 <span class="mui-tab-label">客服</span>
+			</a>
+			<a class="mui-tab-item1 mui-pull-left" data="nav" data-v="share">
+				<span class="mui-icon iconfont icon-fenxiang"></span> 
+				<span class="mui-tab-label" >分享</span>
+			</a>
+			<a class="mui-tab-item1 mui-pull-left relative" data="nav" data-v="carts">
+				<span class="mui-icon iconfont icon-shopping-cart "  id="carts">
+					<span class="mui-badge" id="cartNum">0</span> 
+				</span>
+				<span class="mui-tab-label" >购物车</span>
+				<img src="../images/addcart.png"  class="addcart" id="SmallImage"/> 
+			</a>
+		   <button type="button" class="mui-btn-warning" id="addCart">加入购物车</button> 
+		</nav>
+	 <div id="topPopover" class="mui-popover">
+			<div class="mui-popover-arrow"></div>
+				<ul class="mui-table-view radius">
+					<li class="mui-table-view-cell"  data="menu" data-v="index">
+						<span class="mui-icon iconfont icon-shouye-copy1"></span>首页
+					</li>
+					<li class="mui-table-view-cell" data="menu" data-v="search">
+						<span class="mui-icon iconfont icon-sousuo1"></span>搜索
+					</li>
+					<li class="mui-table-view-cell" data="menu" data-v="msg">
+						<span class="mui-icon iconfont icon-xiaoxi"><span class="mui-badge mui-hidden" id="msgNum">1</span></span>消息信息
+					</li>
+				</ul>
+		</div>
+	 <div class="share mui-popover mui-popover-action mui-popover-bottom"  id="Share">
+	    	<div class="share_ul">
+	    		<a class="share_li" sid="0">
+	    			<img src="../images/fx1.png">
+	    			<span>微信</span>
+	    		</a>
+	    		<a class="share_li" sid="1">
+	    			<img src="../images/fx2.png">
+	    			<span>朋友圈</span>
+	    		</a>
+	    		<a class="share_li" sid="2">
+	    			<img src="../images/fx4.png">
+	    			<span>QQ</span>
+	    		</a>
+	    		<a class="share_li" sid="4">
+	    			<img src="../images/fx6.png">
+	    			<span>信息</span>
+	    		</a>
+	    		<a class="share_li" sid="5">
+	    			<img src="../images/fx5.png">
+	    			<span>邮件</span>
+	    		</a>
+	    		<a class="share_li mui-hidden" sid="6" id="safari">
+	    			<img src="../images/fx7.png">
+	    			<span>Safari 打开</span>
+	    		</a>
+	    		<a class="share_li" sid="7">
+	    			<img src="../images/fx8.png">
+	    			<span>复制链接</span>
+	    		</a>
+	    	</div>
+	    	<a class="share_btn" href="#Share">取消</a>
+	    </div>
+   <div class="mui-content mui-scroll-wrapper" id="pullrefresh">
+			<div class="mui-scroll">
+			<div id="slider" class="mui-slider ios">
+			<div class="mui-slider-group mui-slider-loop"  id="sliderbox" >
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+					  <img src="../images/detailCache.png" />
+					</a>
+				</div>
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+					  <img src="../images/detailCache.png" />
+					</a>
+				</div>
+			</div>
+			<div class="mui-slider-indicator" id="indicator">
+			</div>
+		</div>
+			<div id="container"></div>
+  </div>
+</div>
+ <script type="text/javascript" src="../js/mui.min.js" ></script>
+ <script type="text/javascript" src="../js/mui.zoom.js"></script>
+ <script type="text/javascript" src="../js/mui.previewimage.js"></script>
+ <script type="text/javascript" src="../js/common.js" ></script>
+ <script type="text/javascript" src="../js/cache.img.js?t=1483928576384" ></script>
+ <script type="text/javascript" src="../js/goodsDetail.js?t=1484013940091" ></script>
+	</body>
+</html>

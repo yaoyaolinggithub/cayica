@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title></title>
+    <link href="css/mui.min.css?t=1483955225285" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/default.css?t=1483955225285" />
+    <link rel="stylesheet" href="css/checkVersion.css?t=1483955225285" />
+</head>
+<body>
+	<header class="mui-bar  mui-bar-transparent">
+		<div class="mui-pull-left" id="qrcode">
+			<a class="mui-icon iconfont icon-saoma"></a>
+	    	 <a>扫码</a>
+		</div>
+		<div class="search-box mui-title" id="search">
+			 <span class="mui-icon iconfont icon-sousuo1"></span>请输入关键字搜索
+		</div>
+		<div class="mui-pull-right" id="message">
+				<a class="mui-icon iconfont icon-xiaoxi"><span class="mui-badge mui-hidden" id="msgNum"></span></a>
+		        <a>消息</a>
+		</div>
+	</header>
+	<div class="mui-content" id="container" >
+		<div id="slider" class="mui-slider">
+			<div class="mui-slider-group mui-slider-loop"  id="sliderbox">
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="images/banner.jpg">
+					</a>
+				</div>
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="images/banner.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="mui-slider-indicator" id="indicator">
+			</div>
+		</div>
+		<div class="makeMoney" id="makeMoney">
+			<img src="images/mmoney.png"/>
+		</div>
+		<ul class="mui-table-view" id="grid-box" >
+				<li class="mui-table-view-cell" data="list" data-v="-1">
+					<img  src="images/kongtiao.png"/>
+					<span>空调</span>
+				</li>
+				<li class="mui-table-view-cell " data="list" data-v="-2">
+					<img  src="images/shuixi.png" />
+			         <span>冰洗</span>
+				</li>
+				<li class="mui-table-view-cell" data="list" data-v="-3">
+					<img  src="images/reshuiqi.png"/>
+					<span>热水器</span>
+				</li>
+				<li class="mui-table-view-cell" data="list" data-v="-4">
+				<img  src="images/chuang.png"/>
+				<span>床</span>
+			 </li>
+			</ul>
+		<ul class="mui-table-view" id="grid-box2" >
+				    <li class="mui-table-view-cell" id="quan">
+							<img  src="images/indexQuan.png" />
+							<span>领券</span>
+						 </li>
+						<li class="mui-table-view-cell" data="list2" data-v="1">
+							<img  src="images/lainzu.png" />
+							<span>廉租</span>
+						</li>
+							<li class="mui-table-view-cell" data="list2" data-v="2">
+								<img  src="images/yuding.png"/>
+								<span>预定</span>
+						</li>
+							<li class="mui-table-view-cell" data="list2" data-v="3">
+								<img  src="images/jingpin.png" />
+								<span>精品选购</span>
+						 </li>
+			</ul>
+		<div class="toutiao">
+			<div class="innerbox mui-table-view" >
+				<div class="img-container" id="newslist">
+					<img src="images/toutiao.png" class="toutiao-img"/>
+				</div>
+					<img src="images/guangbo.png" class="guangbo"/>
+					<ul class="mui-table-view"  id="newsbox"> 
+					</ul>
+					</div>
+			</div>
+		<div class="xihuan-title">
+				<img src="images/newGoods.png"/>
+				 <span class="more" id="newmore">更多<span class="mui-icon iconfont icon-youjiantou"></span> </span>
+			</div>
+		<div class="xihuan">
+		 <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+			<div class="mui-scroll" id="newprobox">
+			</div>
+		 </div>
+	</div>
+		<div class="xihuan-title">
+				<img src="images/xihuan.png"/>
+				 <span class="more" id="likemore">更多<span class="mui-icon iconfont icon-youjiantou"></span></span> 
+			</div>
+		<div class="xihuan">
+		 <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+			<div class="mui-scroll" id="likebox">
+			</div>
+		 </div>
+	</div>
+		 <div class="rezu">
+		 	<img src="images/rezu.png" />
+		 </div>
+		 <ul class="mui-grid-view"  id="hotbox">
+       </ul>
+        <div class="clear"></div>
+   	   <div class="youlike mui-hidden" id="takeover">
+   	    	<div class="box">
+   	    	    <span class="word">亲，看完了</span>
+   	    	</div>
+   	   </div>
+	</div>
+	  <div class="mui-backdrop mui-hidden" id="backdrops"></div>
+        <div class="mui-version-tips mui-hidden" id="version_box" >
+     	<div class="title masked" id="masked">检测到新版本</div>
+     	<div class="version">版本号：<span id="version">1.01</span></div>
+     	<div class="size">文件大小：<span id="fileSize">3M</span></div>
+     	<button type="button" class="mui-btn mui-btn-warning"  id="updateVersion">立即更新</button>
+     	<div class="tips">温馨提示：请您先更新再进行操作，若不及时更新可能导致部分功能无法正常使用。</div>
+     	<div class="newfunction " id="newfunction"></div>
+     </div>
+     <div class="mui-version-box mui-hidden" id="Progress_box">
+      	<div class="tip">升级中,请稍后...</div>
+     	<div class="bar_l"><div class="bar_lw" id="updateProgress"></div><div class="bar_lr"></div></div>
+     	<div class="bar_lr" id="numProcess">0%</div>
+     </div>
+	<script type="text/javascript" src="js/mui.min.js" ></script>
+	<script type="text/javascript" src="js/immersed.index.js" ></script>
+	<script type="text/javascript" src="js/common.js?t=1483955225285" ></script>
+	<script type="text/javascript" src="js/check.version.js?t=1483955225285" ></script>
+	<script type="text/javascript" src="js/cache.img.js?t=1483955225285" ></script>
+	<script type="text/javascript" src="js/default.js?t=1483955225285" ></script>
+</body>
+</html>

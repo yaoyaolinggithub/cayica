@@ -1,0 +1,190 @@
+{
+	"main.html": {
+		"resources": [
+			"js/main.js",
+			"js/p.immersed.js",
+			"css/main.css",
+			"css/mui.min.css",
+			"fonts/iconfont.ttf",
+			"default.html",
+			"js/mui.min.js",
+			"fonts/mui.ttf"
+		],
+		"refer": [
+			"my.html",
+			"cart.html",
+			"category.html",
+			"default.html"
+		]
+	},
+	"index.html": {
+		"resources": [
+			"images/loadding.png",
+			"js/mui.min.js"
+		],
+		"refer": [
+			"main.html",
+			"slide.html"
+		]
+	},
+	"my.html": {
+		"resources": [
+			"images/mycenter.png",
+			"css/my.css",
+			"js/common.js",
+			"js/immersed.index.js",
+			"js/mui.min.js",
+			"js/my.js",
+			"fonts/mui.ttf",
+			"images/touxiang.png",
+			"css/mui.min.css",
+			"js/cache.img.js"
+		],
+		"refer": [
+			"login.html",
+			"help/barcoded.html"
+		]
+	},
+	"cart.html": {
+		"resources": [
+			"js/common.js",
+			"js/carts.js",
+			"css/mui.min.css",
+			"css/cart.css",
+			"js/cache.img.js",
+			"fonts/iconfont.ttf"
+		],
+		"refer": []
+	},
+	"category.html": {
+		"resources": [
+			"css/category.css",
+			"js/category.js",
+			"js/common.js",
+			"js/cache.img.js",
+			"css/mui.min.css",
+			"images/hand.png"
+		],
+		"refer": []
+	},
+	"default.html": {
+		"resources": [
+			"css/default.css",
+			"images/mmoney.png",
+			"images/kongtiao.png",
+			"images/guangbo.png",
+			"images/indexQuan.png",
+			"images/chuang.png",
+			"images/reshuiqi.png",
+			"js/common.js",
+			"images/banner.jpg",
+			"images/yuding.png",
+			"images/hand.png",
+			"images/xihuan.png",
+			"images/jingpin.png",
+			"images/rezu.png",
+			"css/mui.min.css",
+			"images/lainzu.png",
+			"js/check.version.js",
+			"images/toutiao.png",
+			"images/newGoods.png",
+			"js/default.js",
+			"css/checkVersion.css",
+			"images/shuixi.png",
+			"js/cache.img.js",
+			"js/immersed.index.js",
+			"js/mui.min.js",
+			"fonts/iconfont.ttf"
+		],
+		"refer": [
+			"goods/goodsList.html",
+			"login.html",
+			"help/barcoded.html",
+			"goods/goodSearch.html"
+		]
+	},
+	"slide.html": {
+		"resources": [
+			"js/slide.js",
+			"images/a1.png",
+			"images/a3.png",
+			"images/a2.png",
+			"css/swiper.min.css",
+			"js/swiper.min.js",
+			"images/a4.png",
+			"css/slide.css"
+		],
+		"refer": []
+	},
+	"login.html": {
+		"resources": [
+			"js/common.js",
+			"js/mui.min.js",
+			"css/login.css",
+			"fonts/mui.ttf",
+			"js/login.js",
+			"css/mui.min.css",
+			"fonts/iconfont.ttf",
+			"js/immersed.js"
+		],
+		"refer": []
+	},
+	"goods/goodsList.html": {
+		"resources": [
+			"js/p.immersed.js",
+			"css/goodsList.css",
+			"js/mui.min.js",
+			"goods/goodsListSub.html",
+			"fonts/mui.ttf",
+			"js/goodsMain.js",
+			"css/mui.min.css",
+			"fonts/iconfont.ttf"
+		],
+		"refer": [
+			"goods/goodsListSub.html"
+		]
+	},
+	"goods/goodsListSub.html": {
+		"resources": [
+			"js/common.js",
+			"js/goodsList.js",
+			"css/goodsListSub.css",
+			"js/cache.img.js",
+			"js/mui.min.js",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"goods/goodsMenu.html"
+		]
+	},
+	"goods/goodsMenu.html": {
+		"resources": [
+			"js/immersed.list.js",
+			"css/goodsMenu.css",
+			"js/goodsMenu.js",
+			"fonts/mui.ttf",
+			"fonts/iconfont.ttf"
+		]
+	},
+	"help/barcoded.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/barcoded.css",
+			"js/barcoded.js"
+		]
+	},
+	"goods/goodSearch.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"fonts/iconfont.ttf",
+			"css/goodsSearch.css",
+			"js/immersed.js",
+			"js/goodsSearch.js"
+		],
+		"refer": [
+			"goods/goodsList.html"
+		]
+	}
+}

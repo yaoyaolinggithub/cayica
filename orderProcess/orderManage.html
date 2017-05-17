@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+		<title></title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/orderManage.css?t=1482218500139" />	
+	</head>
+	<body>
+		<nav id="nav" class="mui-hidden">
+			<button type="button" class="mui-btn mui-btn-outlined mui-btn-danger mui-pull-right " id="allPay">合并付款</button>
+		</nav>
+		<div id="sliderSegmentedControl" class="mui-segmented-control">
+	 		  <div class="mui-small-line">
+	 		  		<a class="mui-control-item mui-active" href="#item1mobile" id="panelTitle1" data="tap">
+				 	 我的订单
+					</a>
+					<a class="mui-control-item" href="#item2mobile" id="panelTitle2" data="tap">
+					 待付款
+					</a>
+					<a class="mui-control-item" href="#item3mobile" id="panelTitle3" data="tap">
+					 待发货
+					</a>
+					<a class="mui-control-item" href="#item4mobile" id="panelTitle4" data="tap">
+					待收货
+					</a>
+	 		  </div>
+			</div> 
+	   <div class=" mui-scroll-wrapper mui-content" id="pullrefresh">
+	    <div class="mui-scroll"> 
+		 <div class="mui-content-padded" >
+				<div id="item1mobile" class="mui-control-content mui-active" >    
+				</div>
+				<div id="item2mobile" class="mui-control-content">
+                  </div>
+				<div id="item3mobile" class="mui-control-content">
+				</div>
+				<div id="item4mobile" class="mui-control-content">
+				</div>
+			</div>
+
+	   </div>
+	  </div>
+	 <script type="text/javascript" src="../js/mui.min.js" ></script>
+	 <script type="text/javascript" src="../js/common.js" ></script>
+	 <script type="text/javascript" src="../js/cache.img.js?t=1479703161172" ></script>
+	 <script type="text/javascript" src="../js/orderManage.js?t=1484013940091" ></script>
+	</body>
+</html>

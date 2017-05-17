@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title></title>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <style>
+      .mui-content,html{font-size: 15px;background: #FFFFFF;}.content{padding: 20px 15px;}p{text-indent: 2em;color: #000000;}.bold{ font-weight: bold;}
+      .ios-scroll-bounce{width: 100%;position: fixed;top: 0px;bottom: 0px;overflow-y: scroll;-webkit-overflow-scrolling: touch;-ms-touch-action: pan-y cross-slide-y;-ms-scroll-chaining: none;-ms-scroll-limit: 0 50 0 50;}
+    </style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">擦一擦预定租赁协议</h1>
+	</header>
+	<div class="mui-content" id="scontent">
+		<div class="content">
+	     <p >1）定金支付成功后不予退还；</p>
+	     <p>2）已成功预定的订单不受任何价格变动影响；</p>
+	     <p>3）【擦一擦】将在到货后进行通知，请在3天内完成剩余款项的支付；如未完成，则视为放弃购买/租赁产品，并扣除定金；</p>
+	     <p>4）预定类产品支持购买/租赁；</p>
+	     <p>5）租赁时间自确认收货之日起开始计算；</p>
+	     <p>6）成功下单后，商品将在15天内免费送货上门，特殊商品送货时间以具体到货时间为准；</p>
+	     <p>7）已经送货上门的产品，非商品质量问题导致，用户拒收或退货，我司有权扣除总押金的15%作为运输和上门费；电器类或特殊商品如已拆机，则需加收10%的折旧费，即总押金的25%；</p>
+	     <p>8）退租时，电器类、特殊类商品除商品外，其他附属配件、说明书、包装盒等需一并退回，否则将无法完成退租。</p>
+	   
+		</div>
+    </div>
+	<script type="text/javascript" src="../js/mui.min.js" ></script>
+	<script type="text/javascript" src="../js/immersed.js" ></script>
+	<script>
+		(function($){
+			if(mui.os.ios){
+				document.getElementById("scontent").classList.add('ios-scroll-bounce');
+			}
+			$.plusReady(function(){
+			    plus.webview.currentWebview().setStyle({scrollIndicator: 'none',decelerationRate:1.0});
+			})
+		})(mui);
+	</script>
+</body>
+</html>

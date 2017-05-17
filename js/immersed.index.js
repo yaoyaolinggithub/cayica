@@ -1,0 +1,1 @@
+(function(c){var f=0;var h=(/Html5Plus\/.+\s\(.*(Immersed\/(\d+\.?\d*).*)\)/gi).exec(navigator.userAgent);if(h&&h.length>=3){f=parseFloat(h[2])}c.immersed=f;if(!f){return}var g=document.getElementsByTagName("header")[0];g&&(g.style.height=(f+44)+"px",g.style.paddingTop=f+"px")})(window);

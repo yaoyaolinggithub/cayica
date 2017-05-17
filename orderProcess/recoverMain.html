@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title></title>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+     <style id="stylesheet"></style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-title">归还单</h1>
+		<a class="mui-btn mui-btn-link mui-pull-right mui-pr3" id="goReturn">去归还</a>
+	</header>
+	<div class="mui-content">
+	<div class="mui-loader">加载中...</div>
+	</div>
+	<script type="text/javascript" src="../js/mui.min.js" ></script>
+	<script type="text/javascript" src="../js/p.immersed.js" ></script>
+	 <script>
+	 var tap=1;
+			(function($){
+				 $.plusReady(function(){	
+				 	tap=plus.webview.currentWebview().tap||1;
+				  $.init({
+				     subpages:[{
+				       url:'orderRecover.html',
+				       id:'orderRecover.html',
+				      styles:{
+				        top:(immersed+44)+'px',
+				        bottom:'0px'
+			       },extras:{
+			       	tap:tap
+			       }
+			      }],
+			      beforeback: function() {
+				      var my=plus.webview.getWebviewById('my.html');
+				        if(my){
+			              $.fire(my,'mycenter');
+			          }
+					}
+			    });
+			  });
+			})(mui);
+			document.getElementById("goReturn").addEventListener('tap',function(){
+				mui.openWindow({
+						url: 'recover.html',
+						id: 'recover.html',
+						show: {
+							duration: 250,
+							aniShow: 'pop-in'
+						},
+						waiting: {
+							autoShow: false
+						}
+				});
+			});
+	</script>
+</body>
+</html>

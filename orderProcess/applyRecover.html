@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+		<title></title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/mui.picker.min.css?t=1483078517699" />
+		<link rel="stylesheet" href="../css/applyRecover.css?t=1483682470157" />
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav" id="header">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title" id="title">申请归还 </h1>
+		</header>
+		<button class="mui-btn mui-btn-warning mui-btn-block mui-btn-self" type="button" id="btnSure">确认归还</button>
+	    <div class="mui-content" id="scontent">
+	    	<div class="item2-tit">
+           	   	 <span>请提交归还信息</span>
+           	   	 <span>擦一擦会安排专业人员上门回收</span>
+           	   	 <span>回收成功剩余押金将退回至您的擦一擦账户中</span>
+           	   </div>
+           	   <div class="line"></div>
+	    		 	<ul class="mui-table-view list top" id="container">
+					</ul>
+				<form  class="mui-input-group top">
+					<div class="mui-input-row">
+						<label>归还总数</label>
+						<input id="txtTotal" type="text" class="mui-input"  placeholder="请输入归还总数" readonly="readonly" value="0"/>
+					</div>
+					<div class="mui-input-row">
+						<label>联系人</label>
+						<input id="txtName" type="text" class="mui-input-clear mui-input" placeholder="请输入您的姓名" maxlength="15"/>
+					</div>
+					<div class="mui-input-row">
+						<label>手机号</label>
+						<input id="txtMobile" type="text" class="mui-input-clear mui-input" placeholder="请输入您的手机号" maxlength="14"/>
+					</div>
+					<div class="mui-input-row">
+						<a class="mui-navigate-right">
+								<label>所在地区</label>
+						       <input id="address" type="text" class="mui-input" placeholder="请选择" readonly="readonly" data="" />
+						</a>
+					</div>
+					<div class="mui-input-row">
+						<label>详细地址</label>
+					 <input id="detailAddr" type="text" class="mui-input mui-input-clear" placeholder="请输入您的详细地址"/>
+					</div>
+				<div class="mui-input-row">
+					<a class="mui-navigate-right">
+					<label>归还时间</label>
+					<input id="txtTime" type="text" class="mui-input" placeholder="请选择"  readonly="readonly"/>
+			    </a>
+			   </div>
+			    <div class="mui-table-view-cell" id="recoverExplain">
+					<a class="mui-navigate-right">
+			          归还须知
+			    </a>
+				</div>
+		</form>
+		<ul class="mui-table-view top">
+				<li class="mui-table-view-cell color">
+					   押金金额
+                    <span class="mui-pull-right" id="yjFee">¥0.00</span>
+                    <div class="top">
+                       应交租金
+                       <span class="mui-pull-right" id="zjFee">¥0.00</span>
+                     </div>
+                    <div class="top" id="bjFee">
+                    	应退还押金
+                       <span class="mui-pull-right">¥0.00</span>
+                    </div>
+				</li>
+	      </ul>
+	 	 </div>  
+	   <script type="text/javascript" src="../js/mui.min.js" ></script>
+	   <script type="text/javascript" src="../js/immersed.js" ></script>
+	   <script type="text/javascript" src="../js/common.js" ></script>
+	   <script type="text/javascript" src="../js/mui.picker.min.js?t=1483682470157" ></script>
+	   <script type="text/javascript" src="../js/cache.img.js?t=1483682470157" ></script>
+	   <script type="text/javascript" src="../js/applyRecover.js?t=1483682470157" ></script>
+	</body>
+</html>

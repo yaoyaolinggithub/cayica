@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title></title>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link href="../css/forgetPwd.css" rel="stylesheet"/>
+</head>
+<body>
+  <header class="mui-bar mui-bar-nav">
+	 	<a class="mui-action-back mui-icon mui-icon-closeempty"></a>
+	 	<h1 class="mui-title">修改支付密码</h1>
+  </header>
+  <div class="mui-content">
+  	<div class="login">
+  		<div class="input_list mui-input-row">
+			<span class="mui-icon iconfont icon-mima"></span>
+			<input type="password"  placeholder="请输入登录密码" class="mui-input-password" id="loginPwd" autocomplete="off"/>
+		</div>
+		<div class="input_list width-icon">
+			<span class="mui-icon iconfont icon-phone-e"></span>
+			<span class="mui-input-row">
+				<input  type="text" class="mui-input-clear width" placeholder="请输入手机号" maxlength="11" id="txtMobile" readonly="readonly"/>
+			</span>
+			<button type="button" class="mui-btn mui-btn-warning mui-btn-outlined mui-pull-right top" id="btnSend">获取验证码</button>
+		</div>
+		<div class="input_list mui-input-row mui-password">
+			<span class="mui-icon iconfont icon-unie637"></span>
+			<input type="text"  placeholder="请输入验证码" class="mui-input-clear" id="txtYzm"/>
+		</div>
+		<div class="input_list mui-input-row">
+			<span class="mui-icon iconfont icon-mima"></span>
+			<input type="password"  placeholder="请输入新支付密码" class="mui-input-password" id="payPwd" autocomplete="off"/>
+		</div>
+		<div class="login_btn">
+			<button type="button" class="mui-btn mui-btn-warning mui-btn-block" id="btnSure">确定</button>
+		</div>
+	</div>
+ </div>
+ <script type="text/javascript" src="../js/mui.min.js" ></script>
+ <script type="text/javascript" src="../js/immersed.js" ></script>
+ <script type="text/javascript" src="../js/common.js" ></script>
+  <script type="text/javascript" src="../js/md5.min.js" ></script>
+  <script type="text/javascript" src="../js/payForget.js" ></script>
+</body>
+</html>

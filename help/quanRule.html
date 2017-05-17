@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title></title>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <style>
+    	.mui-content,html{background: #FFFFFF;font-size: 15px;}.content{padding: 20px 15px;}p{color: #000000;text-indent: 2em;}
+    	.ios-scroll-bounce{width: 100%;position: fixed;top: 0px;bottom: 0px;overflow-y: scroll;-webkit-overflow-scrolling: touch;-ms-touch-action: pan-y cross-slide-y;-ms-scroll-chaining: none;-ms-scroll-limit: 0 50 0 50;}
+    </style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">优惠券使用规则</h1>
+	</header>
+	<div class="mui-content" id="scontent">
+		<div class="content ">
+			<div>1、擦一擦优惠券有哪些？</div>
+			<p>擦一擦优惠券仅适用于用户在WEB端(www.cayica.com)、微信端、手机APP下单时使用；目前分为押金优惠券、租金优惠券。</p>
+			<div>（1）押金优惠券</div>
+			<p>1）按券面值减免押金支付，有使用条件限制，需满足券面条件方可使用；</p>
+			<p>2）每个订单仅能使用押金优惠券一张；</p>
+			<p>3）使用押金优惠券提交订单时，按券面金额减免商品部分押金支付，特殊商品不能使用；</p>
+			<p>4）使用押金优惠券支付的订单，归还或退货时，按实际金额结算租金。</p>
+			<div>（2）租金优惠券</div>
+			<p>1）在租金结算时，按券面值减免租金支付，有使用条件限制，需满足券面条件方可使用；</p>
+			<p>2）每个订单中仅能使用租金优惠券一张；</p>
+			<p>3）使用租金优惠券支付的订单，当在归还、退货或租满三年时，抵扣相应租金，特殊商品不能使用。</p>
+			<div>2、如何查看优惠券？</div>
+			<p>进入“我的”订单，点击“优惠券”，您可以查看“未使用”和“已使用”的优惠券。</p>
+			<div>3、优惠券使用规则</div>
+			<p>1）优惠券适用范围以该券实际显示适用品类为准；</p>
+			<p>2）押金优惠券和租金优惠券可同时使用，每个订单可使用一张押金优惠券和一张租金优惠券；</p>
+			<p>3）擦一擦发放的商品优惠券（押金、租金优惠券）仅支持下单时减扣对应商品的押金/租金，不能进行兑现或其他用途；</p>
+		<p>4）使用押金、租金优惠券的订单，若订单未拆分，则订单取消后，系统自动返还相应的优惠券；若订单被拆分，或取消某一子单或取消全部子单，优惠券均不返还；</p>
+		<p>5）已送货上门的商品，因用户原因引起的整单拒收、退货，或任意子订单拒收、退货，优惠券将不退还；</p>
+		<p>6）使用押金优惠券的订单，当商品需要退货、归还时，系统按实际支付金额进行结算；</p>
+		<p>7）使用租金优惠券的订单，当商品需要退货、归还或租满三年时，抵扣相应租金；</p>
+		<p>8）优惠券有效期内方可使用；</p>
+		<p>9）本细则最终解释权归擦一擦所有。</p>
+		</div>
+    </div>
+	<script type="text/javascript" src="../js/mui.min.js" ></script>
+	<script type="text/javascript" src="../js/immersed.js" ></script>
+	<script>
+		(function($){
+			if(mui.os.ios){
+				document.getElementById("scontent").classList.add('ios-scroll-bounce');
+			}
+			$.plusReady(function(){
+			  plus.webview.currentWebview().setStyle({scrollIndicator: 'none'});
+			})
+		})(mui);
+	</script>
+</body>
+</html>

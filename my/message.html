@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title></title>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/message.css" />
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	 	<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	 	<h1 class="mui-title">消息中心</h1>
+   </header>
+	<div class="mui-content">
+		<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media" data="com" data-v="sys">
+					<img class="mui-media-object mui-pull-left" src="../images/system.png">
+					<div class="mui-media-body message_body">
+					   <span>系统消息</span>
+					   <span class="last-child">点击查看系统消息</span>
+					</div>
+					<span class="mui-badge bk_none" id="systemTime"></span>
+			        <span class="mui-badge mui-badge-red mui-hidden" id="system">0</span>
+			  </li>
+			  <li class="mui-table-view-cell mui-media" data="com" data-v="quan">
+					<img class="mui-media-object mui-pull-left" src="../images/quan.png">
+					<div class="mui-media-body message_body">
+					   <span>优惠券消息</span>
+					   <span class="last-child">点击查看您的优惠券消息</span>
+					</div>
+					<span class="mui-badge bk_none" id="quanTime"></span>
+			        <span class="mui-badge mui-badge-red mui-hidden" id="quan">0</span>
+			  </li>
+			  <li class="mui-table-view-cell mui-media" data="com" data-v="order">
+					<img class="mui-media-object mui-pull-left" src="../images/order.png">
+					<div class="mui-media-body message_body">
+					   <span>订单消息</span>
+					   <span class="last-child">点击查看您的订单消息</span>
+					</div>
+					<span class="mui-badge bk_none" id="orderTime"></span>
+			        <span class="mui-badge mui-badge-red mui-hidden" id="order">0</span>
+			  </li>
+			  <li class="mui-table-view-cell mui-media" data="com" data-v="recover">
+					<img class="mui-media-object mui-pull-left" src="../images/recover.png">
+					<div class="mui-media-body message_body">
+					   <span>归还消息</span>
+					   <span class="last-child">点击查看您的归还消息</span>
+					</div>
+					<span class="mui-badge bk_none" id="recoverTime"></span>
+			        <span class="mui-badge mui-badge-red mui-hidden" id="recover">0</span>
+			  </li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="../js/mui.min.js" ></script>
+	<script type="text/javascript" src="../js/immersed.js" ></script>
+	<script type="text/javascript" src="../js/common.js" ></script>
+	<script type="text/javascript" src="../js/message.js" ></script>
+</body>
+</html>

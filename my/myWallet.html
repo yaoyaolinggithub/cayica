@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title></title>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/myWallet.css?t=1482716101681" />
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">我的钱包</h1>
+			<a class="mui-btn mui-btn-link mui-pull-right mui-pr3" id="withdraw">提现</a>
+	</header>
+	<div class="mui-content">
+		<div class="firstChild">
+			<div class="mui-table-view-cell white" >
+					<span class="mui-icon iconfont icon-yue"></span>
+					<span class="title">账户余额</span>
+					<p class="right-p" id="yue">¥0.00</p>
+			</div>
+			<div class="mui-table-view-cell" data="com" data-t="cardList">
+				<a class="mui-navigate-right" >
+				    <span class="mui-icon iconfont icon-yinxingqia" ></span>
+					<span class="title">银行卡</span>
+				    <p class="right-p-2" id="cardNum">0</p>
+				   </a>
+			</div>
+		</div>
+		<div class="firstChild">
+			<div class="mui-table-view-cell" data="com" data-t="yajin">
+				<a class="mui-navigate-right" >
+				    <span class="mui-icon iconfont icon-ya" ></span>
+					<span class="title">分期额度</span>
+				    <p class="right-p" id="yjyouHui">¥0.00</p>
+				   </a>
+			</div>
+			<div class="mui-table-view-cell" data="com" data-t="quan">
+				<a class="mui-navigate-right" >
+				    <span class="mui-icon iconfont icon-youhui" ></span>
+					<span class="title">优惠券</span>
+				    <p class="right-p-2" id="yhQuan">0</p>
+				   </a>
+			</div>
+		</div>
+		<div class="firstChild mui-table-view mtop">
+			<div class="mui-table-view-cell" data="com" data-t="tuijian">
+				<a class="mui-navigate-right" >
+				    <span class="mui-icon iconfont icon-tuijian" ></span>
+					<span class="title">推荐提成</span>
+				    <p class="right-p" id="recAmount">¥0.00</p>
+				     </a>
+			</div>
+				<div class="mui-table-view-cell" data="com" data-t="tuijian">
+					<a class="mui-navigate-right" >
+				    <span class="mui-icon iconfont icon-tuijianrenshu" ></span>
+					<span class="title">推荐数量</span>
+				    <p class="right-p-2" id="recNum">0</p>
+				     </a>
+			</div>
+		</div>	
+		<ul class="mui-table-view">
+			<li  class="mui-table-view-cell" data="list" data-p="hkmx">
+				<a class="mui-navigate-right" >
+					<span class="word">还款明细</span>
+				</a>
+			</li>
+			<li  class="mui-table-view-cell" data="list" data-p="zjmx">
+				<a class="mui-navigate-right" >
+					<span class="word">资金明细</span>
+				</a>
+			</li>
+			<li  class="mui-table-view-cell" data="list" data-p="txjl">
+				<a class="mui-navigate-right" >
+					<span class="word">提现记录</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="../js/mui.min.js" ></script>
+	<script type="text/javascript" src="../js/immersed.js" ></script>
+	<script type="text/javascript" src="../js/common.js" ></script>
+	<script type="text/javascript" src="../js/myWallet.js?t=1481618743075" ></script>
+</body>
+</html>

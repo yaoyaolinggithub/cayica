@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+		<title></title>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/goodsSearch.css?t=1483682470157" />
+	</head>
+	<body>
+		 <header class="mui-bar mui-bar-nav" id="header">
+				<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" ></a>
+				<a class="mui-icon  mui-icon-mic mui-pull-right" id="speech"></a> 
+				<a class="mui-btn mui-btn-link mui-pull-right mui-hidden" id="btnSearch">搜索</a> 
+				<form onsubmit="javascript:return false;">
+					<div class="search-box mui-title">
+					 <span class="mui-icon iconfont icon-sousuo1"></span>
+					 <div class="mui-input-row">
+						<input  type="search"  placeholder="请输入关键字搜索"  class="ui-search mui-input-clear"  id="search" maxlength="15"/>
+					</div>
+				</div>
+			</form>
+		</header>
+		<div class="mui-content" id="container">
+			<p class="love">猜你想找</p>
+		  <div class="box">
+				<div class="h-container"><span class="mui-dge" data="word">电视</span><span class="mui-dge" data="word">空调</span><span class="mui-dge margin0" data="word">洗衣机</span><span class="mui-dge" data="word">冰箱</span><span class="mui-dge" data="word">iphone</span><span class="mui-dge margin0" data="word">空气净化器</span><span class="mui-dge" data="word">办公</span><span class="mui-dge " data="word">床</span><span class="mui-dge margin0" data="word">沙发</span><span class="mui-dge" data="word">儿童</span></div>
+		</div>
+		<ul class="mui-table-view mui-hidden" id="localstore">
+		</ul>
+		</div>
+	 <script type="text/javascript" src="../js/mui.min.js" ></script>
+	 <script type="text/javascript" src="../js/immersed.js" ></script>
+	 <script type="text/javascript" src="../js/goodsSearch.js?t=1483682470157" ></script>
+	</body>
+</html>

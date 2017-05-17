@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>上传头像</title>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="../css/cropper.min.css?t=1482463810341" />
+	</head>
+	<body>
+	<header class="mui-bar mui-bar-nav" >
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-title">设置头像</h1>
+	</header>
+     <nav class="mui-bar-nav-bottom">
+		<ul class="mui-table-view mui-grid-view mui-grid-9">
+					<li class="mui-table-view-cell mui-media mui-col-xs-4" data="rotate" data-value="90">
+						<a href="javascript:;">
+							<span class="iconfont icon-icon"></span>
+							 <span class="mui-media-body2">90°</span>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4" data="rotate" data-value="180">
+						<a href="javascript:;">
+							<span class="iconfont icon-icon"></span>
+							 <span class="mui-media-body2">180°</span>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4" data="rotate" data-value="270">
+						<a href="javascript:;">
+							<span class="iconfont icon-icon"></span>
+							 <span class="mui-media-body2">270°</span>
+						</a> 
+					</li>
+				</ul>
+				<ul class="mui-table-view mui-grid-view mui-grid-9">
+					<li class="mui-table-view-cell mui-media mui-col-xs-6" data="operater" data-value="chooise">
+						<a href="javascript:;">
+							<span class="iconfont icon-shangchuan"></span>
+							 <span class="mui-media-body2">选择</span>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-6" data="operater" data-value="upload">
+						<a href="javascript:;">
+							<span class="iconfont icon-vxquedingdanchutubiao"></span>
+							 <span class="mui-media-body2">确定</span>
+						</a>
+					</li>
+				</ul>
+		</nav>
+		<div class="mui-content">
+				<div class="img-container" id="img-container">
+						<img class="operate-img" id="operate-img"/>
+				</div>
+		</div>
+	  <script type="text/javascript" src="../js/mui.min.js" ></script>
+	  <script type="text/javascript" src="../js/immersed.js" ></script>
+      <script type="text/javascript" src="../js/jquery-2.0.3.min.js"></script>
+	  <script type="text/javascript" src="../js/cropper.min.js" ></script>
+	  <script type="text/javascript" src="../js/upload.js?t=1482463810341" ></script>
+	</body>
+</html>

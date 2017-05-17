@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title></title>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/realName.css?t=1483682470157" />
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-title">实名认证</h1>
+	</header>
+	<div class="mui-content mui-hidden" id="container">
+		<form  class="mui-input-group">
+			<div class="mui-input-row">
+				<label>姓名</label>
+				<input id="txtName" type="text" class="mui-input-clear mui-input"  placeholder="请输入姓名" maxlength="16"/>
+			</div>
+			<div class="mui-input-row">
+				<label>身份证</label>
+				<input id="idCard" type="text" class="mui-input-clear mui-input" placeholder="请输入身份证号码" maxlength="18"/>
+			</div>
+			<div class="img_li2">证件照</div>
+			<div class="img_li" data="tap" data-v="zheng">
+					<img src="../images/cardCache.png" id="cardBefore">
+					<span>身份证正面</span>
+			</div>
+			<div class="img_li" data="tap" data-v="fan">
+					 <img src="../images/cardCache.png" id="cardBehind">
+					 <span>身份证反面</span>
+			</div>
+		</form>
+		<div id='image-list' class="row image-list"></div>
+		<div class="btn_box">
+			<button type="button" class="mui-btn mui-btn-warning mui-btn-block" id="btnSubmit">提交</button>
+		</div>
+		<p class="tips"> 注意事项：</p>
+		<p class="tips ptop">● 请确保身份证真实，实名认证成功后信息不可修改，请谨慎操作。</p>
+		<p class="tips ptop">● 拍摄照片后，请预览照片，确保拍摄的照片足够清晰，文字、数字可以辨认。</p>
+	</div>
+	<script type="text/javascript" src="../js/mui.min.js" ></script>
+	<script type="text/javascript" src="../js/immersed.js" ></script>
+	<script type="text/javascript" src="../js/common.js" ></script>
+	<script type="text/javascript" src="../js/realName.js?t=1483682470157"></script>
+</body>
+</html>
